@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+      :root
+      {
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      }
+      body
+      {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(190,41,151,0.9948354341736695) 43%, rgba(0,212,255,1) 100%);
+      }
+      .top-side
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        position:fixed;
+        background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(190,41,151,0.9948354341736695) 43%, rgba(0,212,255,1) 100%);
+
+      }
+      #header-img
+      {
+        width: 80px;
+        height: 80px;
+        margin-left: 40px;
+      }
+      #nav-bar a
+      {
+        text-decoration: none;
+        margin-right: 60px;
+        color:black;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      #form
+      {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        padding-top: 100px;
+
+
+      }
+      #email
+      {
+        width: 250px;
+        height: 30px;
+        padding-left: 10px;
+        font-weight: bold;
+        border-radius: 7px;
+        margin-bottom: 16px;
+      }
+      #submit
+      {
+        font-weight: bold;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 80px;
+      }
+      #submit:hover
+      {
+        cursor: pointer;
+      }
+      .products
+      {
+        display: flex
+      }
+      #features
+      {
+        margin-bottom: 80px;
+      }
+      #adidas-products
+      {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        align-self:center;
+        margin-right:40px;
+      }
+      .right h1
+      {
+        margin-bottom:0px;
+      }
+      .products-right p
+      {
+        margin:0px;
+      }
+      #video
+      {
+        margin-bottom: 80px;
+      }
+      #pricing
+      {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-column-gap: 30px;
+        justify-content: center;
+      }
+      .shoes-prices
+      {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        border: 1px solid black;
+        margin-bottom: 80px;
+      }
+      .shoes-prices h1
+      {
+        margin:0px;
+      }
+      .shoes-prices h2
+      {
+        margin:0px;
+      }
+      .shoes-prices p
+      {
+        margin:0px;
+      }
+      .img-adidas
+      {
+        width:200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      footer
+      {
+        text-align: right;
+        background-color: gray;
+      }
+      footer a
+      {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right:40px;
+      }
+      footer p
+      {
+        margin: 0px;
+        color: var(--very-light-pink);
+        font-size: 18px;
+        font-weight: bold;
+        margin-right:40px;
+        margin-bottom: 2px;
+      }
+      @media (max-width:640px)
+      {
+        #header-img
+        {
+          margin-left: 2px;
+        }
+        #nav-bar a
+        {
+          margin-right: 20px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="top-side">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTazqGy3zlESPLOjTtsUEDzBn2raIM4dpM7gA&usqp=CAU" id="header-img" alt="Logo">
+        <nav id="nav-bar">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#video" class="nav-link">How it works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+        </div>
+      </div>
+    </header>
+    <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+      <h1>Adidas the only way to your happiness</h1>
+      <input id="email" type="email" name="email" placeholder="jeanza94@hotmail.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+      <input type="submit" id="submit" value="Get Started">
+      <section id="features">
+        <div class="products">
+          <img id="adidas-products" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXQU51VcWwyTHcxO-cwNx2yvrik6BcJpKoptrsotze6NSXzZtdJ9O&usqp=CAU" alt="Adidas products">
+          <div class="right">
+            <h1>Principle products</h1>
+            <p>We have a great variety in our brand, the most popular
+            are: tennis, clothes, watches, training shoes</p>
+          </div>
+        </div>
+
+        <div class="products">
+          <img id="adidas-products" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5q_7KohDl0etx6MyvE-7k8WHsXQ7LfHHiwQ&usqp=CAU" alt="Quality products">
+          <div class="right">
+            <h1>Quality</h1>
+            <p>In this bland we have the best materials in the industry
+            and the best employees in the world to guarantee the
+            Quality of our products</p>
+          </div>
+        </div>
+
+        <div class="products">
+          <img id="adidas-products" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8KkWAu-hRJl46Q8GWC5i8XXt4gu-maJapg&usqp=CAU" alt="Economy products">
+          <div class="right">
+            <h1>Economy</h1>
+            <p>Dont worry about the prices, they are so cheap that
+            you are not going to wait for buying all the store </p>
+          </div>
+        </div>
+      </section>
+      <iframe src="https://www.youtube.com/embed/fujboh-W7Sk" width="400"
+      height="400" id="video"></iframe>
+    </form>
+    <section id="pricing">
+      <div class="shoes-prices">
+        <h1>Adidas Predator</h1>
+        <img class="img-adidas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxL7LAhmYowVbsh16atO44ROjTY_rSzKPQiA&usqp=CAU" alt="Predator">
+        <h2>$170</h2>
+        <p>The hardest</p>
+      </div>
+
+      <div class="shoes-prices">
+        <h1>Adidas Goletto vii</h1>
+        <img class="img-adidas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBII7EIG6JebHVS4BjDAuFItWyD-eOA9OyNkMMA7e2SrFNS768Qi5uN8VsyU_TmnA0yvk&usqp=CAU" alt="Predator">
+        <h2>$130</h2>
+        <p>The most formal</p>
+      </div>
+
+      <div class="shoes-prices">
+        <h1>Adidas Speed flow</h1>
+        <img class="img-adidas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdLg4CALS_huWKhFTEjJEYPadLc0kM7byVCKbgp8M_jX8YrSN2muyqiENQ3AOJFNbYl8&usqp=CAU" alt="Predator">
+        <h2>$150</h2>
+        <p>The fastest</p>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Contact</a>
+      </div>
+      <p>Copyright 2022, Adidas</p>
+    </footer>
+  </body>
+</html>
